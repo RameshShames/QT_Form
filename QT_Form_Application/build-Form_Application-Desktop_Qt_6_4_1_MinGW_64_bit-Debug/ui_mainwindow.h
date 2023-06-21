@@ -51,7 +51,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(611, 537);
+        MainWindow->resize(745, 472);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -64,25 +64,43 @@ public:
         centralwidget->setObjectName("centralwidget");
         label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(210, 20, 111, 16));
+        label->setGeometry(QRect(20, 40, 206, 16));
+        QFont font;
+        font.setPointSize(15);
+        font.setBold(true);
+        label->setFont(font);
         label->setStyleSheet(QString::fromUtf8("color:white"));
         label->setAlignment(Qt::AlignCenter);
         label_8 = new QLabel(centralwidget);
         label_8->setObjectName("label_8");
-        label_8->setGeometry(QRect(450, 100, 111, 16));
-        label_8->setStyleSheet(QString::fromUtf8("color:white"));
+        label_8->setGeometry(QRect(520, 90, 206, 16));
+        label_8->setStyleSheet(QString::fromUtf8("color:white;"));
         label_8->setAlignment(Qt::AlignCenter);
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(160, 400, 181, 51));
-        pushButton->setStyleSheet(QString::fromUtf8("color:white"));
+        pushButton->setGeometry(QRect(240, 390, 206, 51));
+        pushButton->setStyleSheet(QString::fromUtf8("    background-color: white;\n"
+"    border-style: outset;\n"
+"    border-width: 2px;\n"
+"    border-radius: 10px;\n"
+"    border-color: beige;\n"
+"    font: bold 14px;\n"
+"    min-width: 10em;\n"
+"    padding: 6px;"));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(440, 130, 131, 21));
-        pushButton_2->setStyleSheet(QString::fromUtf8("color:white"));
+        pushButton_2->setGeometry(QRect(520, 130, 206, 31));
+        pushButton_2->setStyleSheet(QString::fromUtf8("    background-color: white;\n"
+"    border-style: outset;\n"
+"    border-width: 2px;\n"
+"    border-radius: 10px;\n"
+"    border-color: beige;\n"
+"    font: bold 14px;\n"
+"    min-width: 10em;\n"
+"    padding: 6px;"));
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(20, 100, 111, 271));
+        layoutWidget->setGeometry(QRect(20, 100, 208, 271));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -130,7 +148,7 @@ public:
 
         layoutWidget1 = new QWidget(centralwidget);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(130, 90, 261, 291));
+        layoutWidget1->setGeometry(QRect(230, 100, 251, 271));
         verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
